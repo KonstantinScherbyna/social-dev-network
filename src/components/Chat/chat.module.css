@@ -1,0 +1,63 @@
+._body {
+    text-align: center;
+    width: 200px;
+}
+
+
+._userName {
+    margin-top: 4px;
+    font-size: 22px;
+    color: #3e2723;
+}
+
+._body img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 150px;
+    /* box-shadow: 3; */
+    border: 2px;
+    border-color: #3e2723;
+}
+
+._body img :hover {
+    background-color: rgb(128, 157, 252, 0.9)
+}
+
+@media (max-width: 767.98px) {
+    ._body {
+        width: 110px;
+    }
+
+    ._body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ._userName {
+        margin-top: 4px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    ._body {
+        width: 55px;
+    }
+
+    ._body img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ._userName {
+        margin-top: 2px;
+        font-size: 8px;
+    }
+}
+
+/* sx={{
+    textAlign: 'center',
+
+    width: 200
+}} */
