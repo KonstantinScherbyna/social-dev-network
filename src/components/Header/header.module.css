@@ -1,0 +1,144 @@
+._header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+._header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e2723;
+    z-index: 2;
+}
+
+._container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+._body {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+
+._Navbar {
+    z-index: 3;
+    color: #bcaaa4;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+
+
+/* ._burger {
+    display: none;
+} */
+
+/* ._burgerOpened {
+    display: block;
+}
+
+._burgerClossed {
+    display: none;
+} */
+
+
+
+
+
+._burger {}
+
+._loginName {
+    z-index: 3;
+    color: #809dfc;
+    flex: 0.1 1 auto;
+}
+
+._logout {
+    z-index: 3;
+    color: #bcaaa4;
+}
+
+._buttonLogout {
+    color: #bcaaa4;
+    background-color: inherit;
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+._buttonLogout:hover {
+    color: #809dfc;
+}
+
+
+._login {
+    position: absolute;
+    z-index: 3;
+    color: #bcaaa4;
+    right: 0;
+}
+
+._login:hover {
+    color: #809dfc;
+}
+
+
+
+@media (max-width:767.98px) {
+    ._Navbar {
+        z-index: -1;
+    }
+
+    ._body {
+        height: 46px;
+        justify-content: center;
+        column-gap: 16px;
+    }
+
+    ._burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        /* height: 20px; */
+        z-index: 3;
+    }
+
+
+    ._Navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #bcaaa4;
+        opacity: 0.9;
+        padding: 100px 0px 0px 0px;
+        transition: all 0.3s ease 0s;
+    }
+
+    ._Navbar.active {
+        right: 0;
+    }
+
+}
+
+@media (max-width:479.98px) {
+    ._body {
+        justify-content: flex-start;
+    }
+}
