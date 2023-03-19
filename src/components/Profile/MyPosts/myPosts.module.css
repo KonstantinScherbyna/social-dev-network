@@ -1,0 +1,41 @@
+._page {
+    display: flex;
+}
+
+._addPostButton {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 2px 2px;
+    margin-top: 16px;
+    background-color: #3e2723;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease 0s;
+    min-width: 128px;
+}
+
+._addPostButton:hover {
+    background-color: #809dfc;
+}
+
+._posts {}
+
+
+@media (max-width:479.98px) {
+    ._page {
+        flex-direction: column;
+    }
+
+    ._addPostButton {
+        width: 100%;
+        height: 48px;
+    }
+}
+
+
+/* ._edit {
+    align-self: flex-start;
+} */

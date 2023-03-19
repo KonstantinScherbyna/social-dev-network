@@ -1,0 +1,49 @@
+._page {
+}
+
+._container {
+    padding: 68px 16px 18px 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+@media (max-width:860.98px) {
+    ._container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* ._container::after {
+    background: #BDCCFF;
+    content: "";
+    position: absolute;
+    width: 52%;
+    top: 0;
+    left: 48%;
+    height: 90%;
+    z-index: -2;
+} */
+
+
+
+@media (max-width:860.98px) {
+    ._container::after {
+        width: 200%;
+        left: 28%;
+        height: 74%;
+        z-index: -2;
+    }
+}
+
+
+._ProfileInfoContainer {}
+
+
+._MyProfileInfo {}
+
+._ProfileInfo {}
+
+._MyPostsContainer {}

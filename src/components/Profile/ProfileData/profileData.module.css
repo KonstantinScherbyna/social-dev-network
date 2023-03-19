@@ -1,0 +1,105 @@
+._items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 auto;
+    position: relative;
+    height: 100%
+}
+
+
+
+._edit {
+    align-self: flex-start;
+}
+
+._editButton {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 4px 18px;
+    background-color: #3e2723;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.45;
+    transition: background-color 0.3s ease 0s;
+}
+
+._editButton:hover {
+    background-color: #809dfc;
+}
+
+/* @media (max-width:735.98px) {
+    ._edit {
+        position: absolute;
+        top: -30px;
+        right: 0px;
+    }
+} */
+
+
+._contactsItems {}
+
+._content {}
+
+
+
+._item {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 8px;
+}
+
+
+
+
+._contactItem {
+    display: flex;
+    gap: 4px;
+}
+
+/* @media (max-width:735.98px) {
+    ._contactItem {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+._itemTitle {
+    font-weight: 500;
+}
+
+._itemField {
+    font-weight: 600;
+    flex: 1 1 auto;
+}
+
+@media (max-width:860.98px) {
+    ._itemTitle {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    ._itemField {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:600.98px) {
+    ._contactItem:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width:479.98px) {
+    ._contactItem {
+        flex-direction: column;
+    }
+}
+
+
+
+._ProfileStatusContainer {}

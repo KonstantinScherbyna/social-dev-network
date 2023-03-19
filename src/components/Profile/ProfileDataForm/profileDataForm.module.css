@@ -1,0 +1,62 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+._myProfileData_items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px 0px;
+}
+
+._myProfileData_edit {
+    align-self: flex-start;
+}
+
+._myProfileData_editButton {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2px 12px;
+    background-color: #BDCCFF;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.45;
+    transition: background-color 0.3s ease 0s;
+}
+
+._myProfileData_editButton:hover {
+    background-color: #809dfc;
+}
+
+._myProfileData_item {
+    display: flex;
+    column-gap: 5px;
+}
+
+._myProfileData_itemTitle {
+    font-weight: 500;
+}
+
+._myProfileData_itemField {
+    font-weight: 600;
+}
+
+._myProfileData_contactsItems {}
+
+._myProfileData_ProfileStatusContainer {}
+
+._myProfileData_profileStatus {}
+
+._myProfileData_statusBody {
+    display: flex;
+    column-gap: 5px;
+}
+
+
+._myProfileData_ProfileStatus {}

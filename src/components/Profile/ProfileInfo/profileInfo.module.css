@@ -1,0 +1,41 @@
+._body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* @media (max-width:887.98px) {
+    ._body {
+        display: flex;
+        column-gap: 24px;
+        justify-content: space-between;
+    }
+} */
+
+@media (max-width:860.98px) {
+    ._body {
+        gap: 0px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:767.98px) {
+    ._body {
+        flex-direction: column;
+    }
+}
+
+._mediaData {
+    flex: 0 1 252px;
+}
+
+._avatar {}
+
+._iconButton {
+    padding-left: 220px;
+}
+
+._ProfileData {
+    flex: 1 1 100%;
+}
