@@ -1,0 +1,117 @@
+._page {
+    overflow: auto;
+}
+
+._page_container {
+    font-size: medium;
+    position: relative;
+    padding: 60px 10px 50px 10px;
+}
+
+
+
+._body {
+    transition: all 0.3s ease 0s;
+}
+
+._body:hover {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+        0px 20px 13px rgba(0, 0, 0, 0.015),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222),
+        3px 44px 54px rgba(0, 0, 0, 0.08);
+}
+
+
+
+._body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    border: 2px solid rgb(17, 12, 12);
+}
+
+
+._title {
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    padding: 20px 10px;
+}
+
+
+
+._description {
+    font-size: 700;
+    padding: 30px 50px;
+    line-height: 1.5;
+    font-size: medium;
+}
+
+
+@media (max-width: 991.98px) {
+    ._description {
+        font-size: 500;
+        padding: 15px 10px;
+    }
+}
+
+
+._resource {
+    text-align: left;
+    padding: 25px 20px 6px 20px;
+    font-size: large;
+}
+
+@media (max-width: 991.98px) {
+    ._resource {
+        text-align: left;
+        padding: 25px 10px 6px 10px;
+        font-size: medium;
+    }
+}
+
+._author {
+    text-align: left;
+
+}
+
+._resourceRef {
+
+    align-items: center;
+    text-align: center;
+
+}
+
+._resourceRef a {
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: #3e2723;
+    border-radius: 3px;
+    padding: 10px;
+    color: #bcaaa4;
+
+}
+
+._resourceRef a:hover {
+    background-color: #5d4037;
+}
+
+
+
+/* .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+} */
