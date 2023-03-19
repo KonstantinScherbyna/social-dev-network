@@ -1,0 +1,64 @@
+._navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    justify-content: space-around;
+}
+
+._avatart {}
+
+._news,
+._profile,
+._dialogs,
+._chat,
+._users {
+    color: #bcaaa4;
+    text-decoration: none;
+}
+
+._news:hover {
+    color: #809dfc;
+}
+
+._profile:hover {
+    color: #809dfc;
+}
+
+._dialogs:hover {
+    color: #809dfc;
+}
+
+._chat:hover {
+    color: #809dfc;
+}
+
+._users:hover {
+    color: #809dfc;
+}
+
+
+@media (max-width:767.98px) {
+    ._navbar {
+        flex-direction: column;
+        row-gap: 36px;
+        font-weight: 800;
+        font-size: 24px;
+        justify-content: flex-start;
+    }
+
+    ._news,
+    ._profile,
+    ._dialogs,
+    ._chat,
+    ._users {
+        color: #3e2723;
+    }
+
+    ._avatart {
+        display: none;
+    }
+
+    ._profile {}
+}

@@ -1,0 +1,49 @@
+._loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/snow-mountain-night-wallpaper-2560x1080_14.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    padding-top: 8px;
+}
+
+._loginFormBody {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 12px 16px 1px rgb(51, 234, 255, 0.7);
+}
+
+
+._register {
+    display: flex;
+    color: #fff;
+    padding: 16px 2px 24px 2px;
+    justify-content: center;
+}
+
+
+._register a {
+    text-decoration: underline;
+    padding-left: 6px;
+    color: #d5bdff;
+}
+
+._register a:hover {
+    color: #33eaff;
+}
+
+
+@media (max-width:479.98px) {
+    ._loginFormBody {
+        width: 300px;
+    }
+}
