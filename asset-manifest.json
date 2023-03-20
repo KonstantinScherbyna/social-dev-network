@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/social-dev-network/static/css/main.9612ef19.css",
-    "main.js": "/social-dev-network/static/js/main.d4ab1754.js",
+    "main.js": "/social-dev-network/static/js/main.5331ca91.js",
     "static/js/787.63fd1c1c.chunk.js": "/social-dev-network/static/js/787.63fd1c1c.chunk.js",
     "static/media/01.jpg": "/social-dev-network/static/media/01.4691c36d84f750f112ae.jpg",
     "static/media/captain-america.jpg": "/social-dev-network/static/media/captain-america.be7c4fcf5acf7db8275b.jpg",
@@ -9,11 +9,11 @@
     "static/media/user.png": "/social-dev-network/static/media/user.96e310a6add3a711174d.png",
     "index.html": "/social-dev-network/index.html",
     "main.9612ef19.css.map": "/social-dev-network/static/css/main.9612ef19.css.map",
-    "main.d4ab1754.js.map": "/social-dev-network/static/js/main.d4ab1754.js.map",
+    "main.5331ca91.js.map": "/social-dev-network/static/js/main.5331ca91.js.map",
     "787.63fd1c1c.chunk.js.map": "/social-dev-network/static/js/787.63fd1c1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9612ef19.css",
-    "static/js/main.d4ab1754.js"
+    "static/js/main.5331ca91.js"
   ]
 }
