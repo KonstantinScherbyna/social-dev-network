@@ -33,11 +33,6 @@ h6 {
     font-size: inherit;
 }
 
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus {
-    background-color: inherit;
-} */
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

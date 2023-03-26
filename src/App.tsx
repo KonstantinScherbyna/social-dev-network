@@ -5,22 +5,12 @@ import { HeaderContainer } from './components/Header/HeaderContainer';
 import LoginPage from './components/Login/LoginContainer';
 import Profile from './components/Profile/Profile'
 import UsersContainer from './components/Users/UsersContainer'
-import Dialogs from './components/Dialogs/Dialogs'
-import withRoot from './withRoot';
 import { NotFaund } from './components/404/NotFaund';
 import ChatPage from './components/Chat/ChatPage';
 import { useAppDispatch, useAppSelector } from './hook';
 import { initializeApp } from './redux/app-reducer-slice';
 import Backdrp from './components/common/Preloader/BackDrop';
 import NewsPage from './components/News/NewsPage';
-import DialogsContainer from './components/Dialogs/DialogsContainer';
-
-
-
-// const Dialogs = React.lazy(() => import('./components/Dialogs/Dialogs'))
-// const Profile = React.lazy(() => import('./components/Profile/Profile'))
-// const UsersContainer = React.lazy(() => import('./components/Users/UsersContainer'))
-
 
 
 const App = () => {
@@ -33,8 +23,6 @@ const App = () => {
   }, [])
 
 
-
-  debugger
   if (!isInitialized) {
     return <Backdrp />
   } return (
@@ -58,5 +46,4 @@ const App = () => {
   )
 }
 
-// export default App
 export default App
