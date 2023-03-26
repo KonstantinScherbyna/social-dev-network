@@ -19,34 +19,26 @@ const ChatPage = () => {
         dispatch(startMessagesListening())
 
         return () => {
-
             dispatch(stopMessagesListening())
-
         }
     }, [])
 
 
     return (<ThemeProvider theme={theme2}>
         <Box sx={{
-
-            // backgroundImage: `url(${bgim})`,
             bgcolor: 'iceblue',
             backgroundRepeat: 'repeatx',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-
             mt: 8,
             minHeight: '100vh',
             width: '100%',
             overflowY: 'auto',
-
         }}>
             {status === 'error' && <div>Some error occured. Please refresh a page</div>}
-
+            
             <ChatMessages />
             <ChatMessageForm />
-
-
         </Box>
     </ThemeProvider>
     )

@@ -1,15 +1,10 @@
 import React from 'react';
-// import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem";
 import Message from "./Dialog";
 import { sendMessage, updateNewMessageBody } from '../../redux/dialogs-reducer-slice';
-import { useDispatch, useSelector } from 'react-redux';
 import { withAuthRedirect } from '../../hoc/withAuthRedirect';
-import { compose } from 'redux';
 import { useAppDispatch, useAppSelector } from '../../hook';
-import { Icomponent } from '../../types/types';
 import Box from '@mui/material/Box/Box';
-import bgim from '../../assets/images/wall-white.jpg'
 import Dialogs from './Dialogs';
 
 // Messages Component
@@ -36,9 +31,7 @@ const DialogsContainer = (props: any) => {
     }
 
     return (
-
         <Box sx={{
-            // backgroundImage: `url(${backgroundImage})`,
             bgcolor: 'iceblue',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -59,5 +52,3 @@ const DialogsContainer = (props: any) => {
 }
 
 export default withAuthRedirect(DialogsContainer)
-
-// export default Dialogs;

@@ -4,11 +4,9 @@ import { Iusers } from '../../types/types'
 import User from './User'
 
 
-
 let UserContainer = ({ user, followingInProgress }: { user: Iusers, followingInProgress: number[] }) => {
 
     let dispatch = useAppDispatch()
-
 
     let unfollow: (uid: number) => void = (uid) => {
         dispatch(unfollowThunk(uid))

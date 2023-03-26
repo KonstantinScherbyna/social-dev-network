@@ -6,7 +6,6 @@ import { getUsersPage } from '../../redux/users-reducer-slice';
 import Users from './Users';
 
 
-
 type QueryParamsType = { term?: string; page?: string; friend?: string }
 
 const UsersContainer = () => {
@@ -25,14 +24,9 @@ const UsersContainer = () => {
     const portionSize = 10
 
 
-    debugger
-
     useEffect(() => {
 
         const urlLocation = new URLSearchParams(location.search)
-
-        debugger
-
 
 
         let usersFilter = filter
@@ -45,7 +39,7 @@ const UsersContainer = () => {
 
         if (!!page) actualPage = Number(page)
         if (!!term) usersFilter = { ...usersFilter, term: term }
-        debugger
+
         switch (friend) {
             case "null":
                 usersFilter = { ...usersFilter, friend: null }
@@ -57,7 +51,7 @@ const UsersContainer = () => {
                 usersFilter = { ...usersFilter, friend: false }
                 break
         }
-        debugger
+
         dispatch(getUsersPage([actualPage, pageSize, usersFilter]))
 
 
@@ -74,29 +68,15 @@ const UsersContainer = () => {
         if (filter.friend !== null) query.friend = String(filter.friend)
         if (pageNumber !== 1) query.page = String(pageNumber)
 
-        debugger
-        //     navigate(`/users?term=${filter.term}&friend=${filter.friend}&page=${pageNumber}`)
-        // }, [filter, pageNumber])
-
         const params = new URLSearchParams(query)
-        debugger
 
         navigate({
             pathname: '/users',
             search: `${params}`,
         })
-        // navigate({
-        //     pathname: '/users',
-        //     search: `?term=${filter.term}&friend=${filter.friend}&page=${pageNumber}`,
-        // })
 
     }, [filter, pageNumber])
 
- 
-
-    // if (isFetching) {
-    //     return <Preloader />
-    // } 
     return <Users
         totalItemsCount={totalItemsCount}
         pageSize={pageSize}
@@ -104,9 +84,7 @@ const UsersContainer = () => {
         isFetching={isFetching}
         users={users}
         followingInProgress={followingInProgress}
-        // pagesCount={pagesCount}
         portionSize={portionSize}
-        // onPageChanged={onPageChanged}
         filter={filter}
     />
 }

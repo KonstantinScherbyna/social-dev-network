@@ -14,31 +14,25 @@ const UsersSearchFormContainer = () => {
     const filter = useAppSelector(store => store.usersPage.filter)
 
     const onFilterChanged = (usersFilter: IUsersFilter) => {
-        debugger
         dispatch(getUsersPage([pageNumber, pageSize, usersFilter]))
     }
 
     const f1 = (e: any) => {
-        debugger
         let e2 = e?.target?.value
         const usersFilter = {
             term: e2 === "null" ? filter.term : e2 === "true" ? filter.term : e2 === "false" ? filter.term : e2,
             friend: e2 === "null" ? null : e2 === "true" ? true : e2 === "false" ? false : filter.friend
         }
-        debugger
         onFilterChanged(usersFilter)
     }
 
     const debounced = debounce(f1, 200)
-
 
     return <UsersSearchForm
         onFilterChanged={onFilterChanged}
         filter={filter}
         f1={f1}
         debounced={debounced}
-
-
     />
 }
 

@@ -17,7 +17,6 @@ const ChatMessages = () => {
         } else {
             isAutoScroll && setIsAutoScroll(false)
         }
-
     }
 
     useEffect(() => {
@@ -32,7 +31,6 @@ const ChatMessages = () => {
         {messages.map((m) => <ChatMessage key={m.id} message={m} />)}
 
         <div ref={messagesAnchorRef}></div>
-
     </Box>
 }
 

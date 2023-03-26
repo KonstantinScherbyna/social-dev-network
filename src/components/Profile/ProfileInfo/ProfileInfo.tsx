@@ -1,9 +1,6 @@
 import userPhoto from '../../../assets/images/user.png'
-import ProfileDataForm from '../ProfileDataForm/ProfileDataForm';
 import ProfileData from '../ProfileData/ProfileData';
-import IconButton from '@mui/material/IconButton';
-import PhotoCamera from '@mui/icons-material/PhotoCamera';
-import { Avatar, Box } from '@mui/material';
+import { Avatar } from '@mui/material';
 import { IProfileInfoProps } from '../../../types/types'
 import { ThemeProvider } from '@mui/material/styles';
 import theme2 from '../../../theme2';

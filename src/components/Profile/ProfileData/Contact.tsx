@@ -1,4 +1,3 @@
-
 import styles from "./profileData.module.css"
 
 const Contact = ({ contactTitle, contactValue }: { contactTitle: string, contactValue: string | null }) => {

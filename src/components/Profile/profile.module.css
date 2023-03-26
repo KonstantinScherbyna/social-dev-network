@@ -16,19 +16,6 @@
 }
 
 
-/* ._container::after {
-    background: #BDCCFF;
-    content: "";
-    position: absolute;
-    width: 52%;
-    top: 0;
-    left: 48%;
-    height: 90%;
-    z-index: -2;
-} */
-
-
-
 @media (max-width:860.98px) {
     ._container::after {
         width: 200%;
@@ -40,7 +27,6 @@
 
 
 ._ProfileInfoContainer {}
-
 
 ._MyProfileInfo {}
 

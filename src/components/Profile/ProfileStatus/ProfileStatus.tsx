@@ -1,6 +1,4 @@
 import styles from './profileStatus.module.css'
-// import Input from "../../input"
-
 
 // status of user on a page
 const ProfileStatus = (props: any) => {
@@ -15,7 +13,6 @@ const ProfileStatus = (props: any) => {
         }
         {props.editMode && <div>
             <input onChange={props.onStatusChange} value={props.status} autoFocus={true} onBlur={props.deactivateEditMode} placeholder="Hey! I'm your staus" />
-            {/* < Input value={status} onChange={onStatusChange} autoFocus={true} onBlur={deactivateEditMode} placeholder="Hey! I'm your staus" /> */}
         </div>}
     </div>
 

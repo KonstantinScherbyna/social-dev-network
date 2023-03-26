@@ -1,9 +1,6 @@
-import React from 'react';
-import s from './../Dialogs.module.css';
-
 
 // messages with penpels
-const Dialog = ({ message, ...props }: { message: string, props: any }) => {
+const Dialog = ({ message }: { message: string, props: any }) => {
     debugger
     return <div>{message}</div>
 }

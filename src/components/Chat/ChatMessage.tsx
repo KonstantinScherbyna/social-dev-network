@@ -1,4 +1,4 @@
-import { Box, TextField, Button, Avatar } from '@mui/material';
+import { Box } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { IChatMessageAPI } from '../../types/types';
 import userPhoto from '../../assets/images/captain-america.jpg'
@@ -22,43 +22,6 @@ const ChatMessage: React.FC<{ message: IChatMessageAPI }> = (({ message }) => {
                 {message.userName}
             </div>
         </div>
-        {/* <Box sx={{
-            textAlign: 'center',
-
-            width: 200
-        }}>
-            <NavLink to={`/profile/${message.userId}`}>
-                <Avatar variant="rounded"
-                    alt={message.userName as string}
-                    src={message.photo || userPhoto}
-
-                    sx={{
-                        marginRight: 'auto',
-                        marginLeft: 'auto',
-                        width: 150,
-                        height: 150,
-                        boxShadow: 3,
-                        border: 2,
-                        borderColor: 'primary.light',
-                        '&:hover': {
-                            backgroundColor: 'success.main',
-                            opacity: [0.9, 0.8, 0.9],
-                        },
-                    }}
-                />
-            </NavLink>
-            <Box sx={{
-
-                mt: 1,
-                fontSize: 'h6.fontSize',
-                color: 'primary.main'
-            }}
-            >
-                {message.userName}
-            </Box>
-        </Box> */}
-
-
         <Box sx={{
             flexGrow: 1,
             mx: 2,

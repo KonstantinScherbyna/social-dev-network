@@ -1,6 +1,6 @@
 import { IusersProps } from '../../types/types';
 import Paginator from '../common/Paginator/Paginator';
-import { Box, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import UserContainer from './UserContainer';
 import UsersSearchFormContainer from './UsersSearchFormContainer';
 import theme2 from '../../theme2';

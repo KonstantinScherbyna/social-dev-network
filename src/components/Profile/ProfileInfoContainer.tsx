@@ -2,14 +2,13 @@ import { useEffect } from 'react';
 import { getStatus, savePhoto, getAnotherProfile, getMyProfile } from '../../redux/profile-reducer-slice';
 import { useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hook';
-import { Box } from '@mui/material';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import Backdrp from '../common/Preloader/BackDrop';
 import MyProfileInfo from './ProfileInfo/MyProfileInfo';
 import styles from './profile.module.css'
 
 const ProfileInfoContainer = (props: any) => {
-    debugger
+
     const dispatch = useAppDispatch()
     let { userId } = useParams()
 
@@ -21,9 +20,6 @@ const ProfileInfoContainer = (props: any) => {
     // const profilePhoto = useSelector((state) => state.profilePage.profile.photos)
     const editMode = useAppSelector((state) => state.profilePage.editMode)
 
-    console.log('PROFILE CONTAINER TOP')
-    debugger
-
     // dispatch thunks for get profile page
     useEffect(() => {
         if (userId) {
@@ -32,9 +28,6 @@ const ProfileInfoContainer = (props: any) => {
             dispatch(getMyProfile(myId))
         }
     }, [userId, myId])
-
-    console.log('PROFILE CONTAINER MID')
-    debugger
 
 
     // dispatch thunks for get profile status
@@ -46,9 +39,6 @@ const ProfileInfoContainer = (props: any) => {
         }
     }, [userId, myId])
 
-    console.log('PROFILE CONTAINER MID-2')
-    debugger
-
 
     // dispatch thunk with selected image file to api
     const onMainPhotoSelected = (e: any) => {
@@ -56,9 +46,6 @@ const ProfileInfoContainer = (props: any) => {
             dispatch(savePhoto(e.target.files[0]))
         }
     }
-
-    console.log('PROFILE CONTAINER MID-3')
-    debugger
 
     if (!profile || !myId) {
         return <Backdrp />

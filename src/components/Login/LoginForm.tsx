@@ -1,21 +1,13 @@
-import { Box, Button, Checkbox, colors, Icon, IconButton, InputAdornment, OutlinedInput, styled, TextField, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { Box, Button, Checkbox, IconButton, InputAdornment, styled, TextField, Typography } from "@mui/material";
+import React from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../hook";
+import { useAppDispatch } from "../../hook";
 import { login } from "../../redux/auth-reducer-slice";
-import lockSVG from "../../assets/images/lock-closed-outline.svg"
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { padding } from "@mui/system";
-import bgIm from "../../assets/images/snow-mountain-night-wallpaper-2560x1080_14.jpg"
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Visibility from '@mui/icons-material/Visibility';
-import shadows from "@mui/material/styles/shadows";
 import styles from "./login.module.css"
-
-
 
 
 const CssTextField = styled(TextField)({
@@ -71,8 +63,6 @@ const LoginForm = (props: any) => {
 
     return (<div className={styles._loginForm}>
 
-        {/* <img src={bgIm} alt="Login Backgroun Img" /> */}
-
         <div className={styles._loginFormBody}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
@@ -92,21 +82,6 @@ const LoginForm = (props: any) => {
                             </InputAdornment>
                         ), style: { fontWeight: 500 }
                     }} />
-                    {/* <TextField sx={{
-                        mb: 1, '& label.MuiInputLabel-root': { color: '#33eaff', },
-                    }} id="email" fullWidth variant="outlined" label="Email" type={"email"} {...register("email", {
-                        required: "Please enter your email.",
-                        pattern: {
-                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "invalid email address"
-                        }
-                    })} InputProps={{
-                        endAdornment: (
-                            <InputAdornment position="end">
-                                <EmailOutlinedIcon fontSize="small" />
-                            </InputAdornment>
-                        ),
-                    }} /> */}
-
                 </div>
 
                 <div>
@@ -166,7 +141,6 @@ const LoginForm = (props: any) => {
     </div >
     )
 }
-
 
 
 export default LoginForm

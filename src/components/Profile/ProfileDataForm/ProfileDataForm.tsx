@@ -2,20 +2,18 @@ import { useForm } from 'react-hook-form';
 import { useAppDispatch, useAppSelector } from '../../../hook';
 import { myProfileInfoThunk } from '../../../redux/profile-reducer-slice';
 import styles from './profileDataForm.module.css'
-import ProfileStatusContainer from '../ProfileStatus/ProfileStatusContainer';
 
 const ProfileDataForm = (props: any) => {
+
+    const dispatch = useAppDispatch()
+
     const profile = useAppSelector((store) => store.profilePage.myProfile)
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         mode: "onBlur",
     });
 
-    const dispatch = useAppDispatch()
-
-
     const myid = useAppSelector(store => store.profilePage.myProfile.userId)
-    // const myid = props.profile.userId
 
     const onSubmit = (data: any) => {
 
@@ -52,13 +50,6 @@ const ProfileDataForm = (props: any) => {
                     return <div key={key}><b>{key}: <input {...register(`contacts.${key}`)} /></b></div>
                 })}
             </div>
-            {/* <div>
-                <ProfileStatusContainer />
-            </div> */}
-
-            {/* <div>
-            {props.isError && props.isErrorMessage}
-        </div> */}
         </form>
     </div>
 }

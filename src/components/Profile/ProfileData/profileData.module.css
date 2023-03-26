@@ -7,8 +7,6 @@
     height: 100%
 }
 
-
-
 ._edit {
     align-self: flex-start;
 }
@@ -31,19 +29,10 @@
     background-color: #809dfc;
 }
 
-/* @media (max-width:735.98px) {
-    ._edit {
-        position: absolute;
-        top: -30px;
-        right: 0px;
-    }
-} */
-
 
 ._contactsItems {}
 
 ._content {}
-
 
 
 ._item {
@@ -53,19 +42,10 @@
 }
 
 
-
-
 ._contactItem {
     display: flex;
     gap: 4px;
 }
-
-/* @media (max-width:735.98px) {
-    ._contactItem {
-        display: flex;
-        flex-direction: column;
-    }
-} */
 
 ._itemTitle {
     font-weight: 500;
@@ -99,7 +79,5 @@
         flex-direction: column;
     }
 }
-
-
 
 ._ProfileStatusContainer {}

@@ -1,17 +1,9 @@
-import React from 'react';
 import { setEditMode } from '../../../redux/profile-reducer-slice';
-import s from './ProfileInfo.module.css';
 import { useDispatch } from 'react-redux';
-import ProfileStatus from '../ProfileStatus/ProfileStatus';
 import { Iconstacts, IprofileInfo } from '../../../types/types';
-import { Box, Button } from '@mui/material';
-import Typography from '@mui/material/Typography';
-import theme2 from '../../../theme2';
-import { ThemeProvider } from '@mui/material/styles';
 import styles from './profileData.module.css'
 import ProfileStatusContainer from '../ProfileStatus/ProfileStatusContainer';
 import Contact from './Contact';
-
 
 
 // info about user
@@ -70,13 +62,5 @@ const MyProfileData = ({ profile, myId, err }: { profile: IprofileInfo, myId: nu
         </div>
     </div >
 }
-
-// const Contact = ({ contactTitle, contactValue }: { contactTitle: string, contactValue: string | null }) => {
-
-//     return <div>
-//         {contactTitle}:{contactValue}
-//     </div >
-
-// }
 
 export default MyProfileData;
