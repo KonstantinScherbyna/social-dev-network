@@ -7,7 +7,7 @@ import Backdrp from '../common/Preloader/BackDrop';
 import MyProfileInfo from './ProfileInfo/MyProfileInfo';
 import styles from './profile.module.css'
 
-const ProfileInfoContainer = (props: any) => {
+const ProfileInfoContainer = () => {
 
     const dispatch = useAppDispatch()
     let { userId } = useParams()
