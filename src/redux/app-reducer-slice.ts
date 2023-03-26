@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IinitialStateApp } from "../types/types";
 import { getAuthUserData } from "./auth-reducer-slice";
-import { getMyProfile } from "./profile-reducer-slice";
 
 // whaiting responses of all fetches to API and then show App
 export const initializeApp = createAsyncThunk<void, void>(
@@ -10,8 +9,6 @@ export const initializeApp = createAsyncThunk<void, void>(
         await dispatch(getAuthUserData())
 
         dispatch(initializing(true))
-
-
     }
 )
 

@@ -1,16 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { IinitialStateDialogs } from "../types/types";
 
-
-// export interface IInitialStateDialogs {
-//     dialogs: {
-//         id: number
-//         name: string
-//     }[]
-//     messages: any[]
-//     newMessageBody: string
-// }
-
 let initialState: IinitialStateDialogs = {
     dialogs: [
         { id: 1, name: 'Dimych' },

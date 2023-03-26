@@ -77,7 +77,6 @@ export const getCaptchaUrlThunk = createAsyncThunk<void, void>(
 )
 
 
-
 const initialState: IinitialStateAuth = {
     id: null,
     login: null,
@@ -103,20 +102,6 @@ const authReducerSlice = createSlice({
             state.captcha = action.payload.captcha
         }
     },
-    // extraReducers: (builder) => {
-    //     builder.addCase(getAuthUserData.fulfilled, (state, action: any) => {
-    //         state.id = action.payload.id
-    //         state.login = action.payload.login
-    //         state.email = action.payload.email
-    //         
-    //     }),
-    //         builder.addCase(login.fulfilled, (state, { payload }) => {
-    //             // id: null, login: null, email, isAuth: true, isError: false, errorMessage: logIn.messages, captchaObj: { captcha: null }
-    //             state.id = payload.id
-    //             state.login = payload.login
-    //             state.email = payload.email
-    //         })
-    // }
 })
 
 export default authReducerSlice.reducer

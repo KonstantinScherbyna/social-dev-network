@@ -1,4 +1,4 @@
-import userPhoto from '../../../assets/images/user.png'
+import userPhoto from '../../../assets/images/captain-america.jpg'
 import ProfileDataForm from '../ProfileDataForm/ProfileDataForm';
 import IconButton from '@mui/material/IconButton';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';

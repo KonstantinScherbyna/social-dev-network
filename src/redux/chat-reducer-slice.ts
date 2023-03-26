@@ -75,12 +75,6 @@ interface IChatState {
     status: StatusType
 }
 
-
-// interface IChatState {
-//     messages: IChatMessageAPI[]
-//     status: StatusType
-// }
-
 let initialState: IChatState = {
     messages: [],
     status: 'pending'
@@ -91,20 +85,7 @@ const chatReducerSlice = createSlice({
     name: 'chatReducerSlice',
     initialState,
     reducers: {
-        // messagesReceived(state, action: PayloadAction<IChatMessageAPI[]>) {
 
-        //     
-        //     let s1: IChatMessageType[] = action.payload.map(m => ({ ...m, id: v1() }))
-        //     console.log(s1)
-        //     let s2: IChatMessageType[] = s1.filter((m, index, array) => index >= array.length - 100)
-        //     // state.messages = s2
-        //     
-
-        //     state.messages.push(s2)
-        //     // state.messages = action.payload
-
-
-        // },
         statusChanged(state, action: PayloadAction<StatusType>) {
             state.status = action.payload
         }
@@ -113,39 +94,11 @@ const chatReducerSlice = createSlice({
         builder
             .addCase(messagesReceived, (state, action) => {
 
-                // let s1: IChatMessageType[] = action.payload.map(m => ({ ...m, id: v1() }))
-                // let s2 = s1.filter((m, index, array) => index >= array.length - 100)
-
-
-
-
-
-
-                // return {
-                //     ...state,
-                //     messages: [...state.messages, ...s1]
-                //         .filter((m, index, array) => index >= array.length - 100)
-                // }
-
-
                 return {
                     ...state,
                     messages: [...state.messages, ...action.payload.map(m => ({ ...m, id: v1() }))]
                         .filter((m, index, array) => index >= array.length - 100)
                 }
-
-
-
-                // let s1: IChatMessageType[] = action.payload.map(m => ({ ...m, id: v1() }))
-                // let s2 = s1.filter((m, index, array) => index >= array.length - 100)
-
-                // if (state.messages == s2) {
-                //     return state
-                // } return {
-                //     ...state,
-                //     messages: [...state.messages, ...s1]
-                //         .filter((m, index, array) => index >= array.length - 100)
-                // }
 
             })
     },

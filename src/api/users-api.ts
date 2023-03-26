@@ -1,5 +1,5 @@
 import axios from "axios"
-import { IapiResponseResult, IprofileInfo, IUsersFilter } from "../types/types";
+import { IapiResponseResult, IUsersFilter } from "../types/types";
 
 
 const instance = axios.create({
@@ -8,8 +8,6 @@ const instance = axios.create({
     headers: { "API-KEY": "a11c1b6e-985d-42c3-9af2-d65c3bcf4ccb" }
 });
 
-
-
 export const usersAPI = {
     
     getUsersPage(pageSize: number = 10, pageNumber: number, usersFilter: IUsersFilter): Promise<any> {
@@ -17,7 +15,6 @@ export const usersAPI = {
         return instance.get(`users?count=${pageSize}&page=${pageNumber}&term=${usersFilter.term}` + (usersFilter.friend === null ? '' : `&friend=${usersFilter.friend}`))
             .then(response => { return response.data })
     },
-
 
     // unsubscribe from user
     deleteUserSubscribe(uId: number | null): Promise<IapiResponseResult> {

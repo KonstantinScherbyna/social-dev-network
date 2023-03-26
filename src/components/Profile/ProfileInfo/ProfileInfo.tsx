@@ -1,4 +1,4 @@
-import userPhoto from '../../../assets/images/user.png'
+import userPhoto from '../../../assets/images/captain-america.jpg'
 import ProfileData from '../ProfileData/ProfileData';
 import { Avatar } from '@mui/material';
 import { IProfileInfoProps } from '../../../types/types'
@@ -19,6 +19,7 @@ const ProfileInfo = ({ profileErr, profile }: IProfileInfoProps) => {
                     height: 250,
                     border: 2,
                     borderColor: 'primary',
+                    mb: 2
                 }} />
             <ProfileData profile={profile} err={profileErr} />
         </div>

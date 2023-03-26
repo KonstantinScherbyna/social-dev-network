@@ -5,8 +5,6 @@ const subscribers = {
     'status-changed': [] as StatusChangedSubscriberType[]
 }
 
-
-
 let ws: WebSocket | null = null
 
 type EventsNamesType = 'messages-received' | 'status-changed'
@@ -60,8 +58,6 @@ const createChannal = () => {
 }
 
 
-
-
 export const chatAPI = {
 
     start() {
@@ -99,7 +95,6 @@ export const chatAPI = {
 
 type MessagesReceivedSubscriberType = (messages: IChatMessageAPI[]) => void
 type StatusChangedSubscriberType = (status: StatusType) => void
-
 
 
 export type StatusType = 'pending' | 'ready' | 'error'

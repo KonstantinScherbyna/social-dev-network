@@ -105,37 +105,17 @@ const usersReducerSlice = createSlice({
             state.filter.friend = action.payload.friend
         }
     },
-
-    // extraReducers: builder => {
-    //     builder.addCase(fetchUsersById.pending, (state, action) => {
-    //         console.log('fetchUsersById.pending')
-    //     })
-    //     builder.addCase(fetchUsersById.fulfilled, (state, action) => {
-    //         console.log('fetchUsersById.fulfilled')
-    //     })
-    //     builder.addCase(fetchUsersById.rejected, (state, action) => {
-    //         console.log('fetchUsersById.rejected')
-    //     })
-
-    //     // -------------------------------------------
-
-    //     builder.addCase(fetchUsersPageSize.pending, (state, action) => {
-    //         console.log('fetchUsersPageSize.pending')
-    //     })
-    //     builder.addCase(fetchUsersPageSize.fulfilled, (state, action) => {
-    //         console.log('fetchUsersPageSize.fulfilled')
-    //     })
-    //     builder.addCase(fetchUsersPageSize.rejected, (state, action) => {
-    //         console.log('fetchUsersPageSize.rejected')
-    //     })
-
-    // }
 })
 
 
 
-
-
-
 export default usersReducerSlice.reducer
-export const { followUsers, unfollowUsers, setUsers, setCurrentPage, setTotalUsersCount, toggleIsFetching, toggleFollowingProgress, setFilter } = usersReducerSlice.actions
+export const { 
+    followUsers, 
+    unfollowUsers, 
+    setUsers, 
+    setCurrentPage, 
+    setTotalUsersCount, 
+    toggleIsFetching, 
+    toggleFollowingProgress, 
+    setFilter } = usersReducerSlice.actions

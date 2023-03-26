@@ -4,7 +4,9 @@ import MyPostsContainer from './MyPosts/MyPostsContainer';
 import styles from './profile.module.css'
 
 
-const Profile = (props: React.HTMLAttributes<HTMLDivElement>) => {
+const Profile = () => {
+
+    
 
     return (
         <div className={styles._page}>
