@@ -6,9 +6,9 @@ import { IinitialStateUsers, Iusers, IUsersFilter } from "../types/types"
 
 export const getUsersPage = createAsyncThunk<void, any>(
     'usersReducerSlice/fetchUsersPageSize', async (data, { rejectWithValue, dispatch }) => {
-        debugger
+
         let  [pageNumber, pageSize, usersFilter]  = data
-        debugger
+
         dispatch(toggleIsFetching(true))
         dispatch(setCurrentPage(pageNumber))
         dispatch(setFilter(usersFilter))
@@ -87,7 +87,7 @@ const usersReducerSlice = createSlice({
             state.pageNumber = action.payload
         },
         setTotalUsersCount(state, action: PayloadAction<number>) {
-            debugger
+    
             state.totalUsersCount = action.payload
         },
         toggleIsFetching(state, action: PayloadAction<boolean>) {

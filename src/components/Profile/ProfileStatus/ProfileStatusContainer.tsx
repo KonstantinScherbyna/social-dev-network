@@ -14,14 +14,14 @@ const ProfileStatusContainer = (props: any) => {
     let [editMode, setEditMode] = useState(false)
     let [status, setStatus] = useState(userStatus)
 
-    debugger
+
     useEffect(() => {
         setStatus(status)
     }, [status])
 
     // activate mod for editing status
     const activateEditMode = () => {
-        debugger
+    
         setEditMode(true)
     }
 

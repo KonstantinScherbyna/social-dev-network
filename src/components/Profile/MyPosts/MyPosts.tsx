@@ -12,7 +12,7 @@ const MyPosts = ({ onPostChange, onAddPost, sendMessageEvent, newPostText, }: IM
 
 
     const posts = useAppSelector((state) => state.profilePage.posts)
-    debugger
+    
     return (<ThemeProvider theme={theme2}>
         <div className={styles._page}>
 

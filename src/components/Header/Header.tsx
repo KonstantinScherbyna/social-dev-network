@@ -3,6 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Navbar from '../Navbar/Navbar';
 import styles from './header.module.css'
+import { NavLink } from 'react-router-dom';
 
 
 const Header = ({ isAuth, login, logout }: { isAuth: boolean, login: string | null, logout: () => void }) => {
@@ -43,7 +44,7 @@ const Header = ({ isAuth, login, logout }: { isAuth: boolean, login: string | nu
 
             </nav> : <nav className={styles._body}>
 
-                <a href='' className={styles._login} >Login</a>
+                <NavLink to='' className={styles._login}>Login</NavLink>
 
             </nav>
             }

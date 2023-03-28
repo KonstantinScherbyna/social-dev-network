@@ -25,7 +25,7 @@ export const profileAPI = {
 
     // fetch profile status from server
     getStatus(userId: number | null): Promise<string> {
-        debugger
+        
         return instance.get(`profile/status/${userId}`)
             .then(response => { return response.data })
     },
@@ -41,7 +41,7 @@ export const profileAPI = {
         const formData = new FormData();
         formData.append("image", photoFile)
 
-        debugger
+        
         return instance.put(`profile/photo`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -52,7 +52,7 @@ export const profileAPI = {
 
     // send personal info to server
     updateProfileInfo(profileInfo: IprofileInfo | null): Promise<IapiResponseResult> {
-        debugger
+        
         return instance.put(`profile/`, profileInfo)
             .then(response => { return response.data })
     },

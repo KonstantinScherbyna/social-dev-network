@@ -11,7 +11,7 @@ const instance = axios.create({
 export const usersAPI = {
     
     getUsersPage(pageSize: number = 10, pageNumber: number, usersFilter: IUsersFilter): Promise<any> {
-        debugger
+        
         return instance.get(`users?count=${pageSize}&page=${pageNumber}&term=${usersFilter.term}` + (usersFilter.friend === null ? '' : `&friend=${usersFilter.friend}`))
             .then(response => { return response.data })
     },
@@ -24,7 +24,7 @@ export const usersAPI = {
 
     // subscribe to user
     addUserSubscribe(uId: number | null): Promise<IapiResponseResult> {
-        debugger
+        
         return instance.post(`follow/${uId}`)
             .then(response => { return response.data })
     },

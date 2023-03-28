@@ -8,7 +8,6 @@ import MyProfileData from '../ProfileData/MyProfileData';
 import styles from './profileInfo.module.css'
 
 const MyProfileInfo = ({ onMainPhotoSelected, profileErr, profile, myId, editMode }: IMyProfileInfoProps) => {
-    debugger
     return <div className={styles._body}>
         <div className={styles._mediaData}>
             <div className={styles._avatar}>

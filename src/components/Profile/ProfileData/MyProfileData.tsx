@@ -11,7 +11,6 @@ const MyProfileData = ({ profile, myId, err }: { profile: IprofileInfo, myId: nu
 
     const dispatch = useDispatch()
 
-    debugger
     return <div className={styles._items}>
         <div className={styles._edit}>
             {myId && <button onClick={() => dispatch(setEditMode(true))} className={styles._editButton}>Edit</button>}
