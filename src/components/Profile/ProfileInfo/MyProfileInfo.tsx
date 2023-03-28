@@ -8,9 +8,9 @@ import MyProfileData from '../ProfileData/MyProfileData';
 import styles from './profileInfo.module.css'
 
 const MyProfileInfo = ({ onMainPhotoSelected, profileErr, profile, myId, editMode }: IMyProfileInfoProps) => {
-    return <div className={styles._body}>
-        <div className={styles._mediaData}>
-            <div className={styles._avatar}>
+    return <div className={styles.body}>
+        <div className={styles.mediaData}>
+            <div className={styles.avatar}>
                 <Avatar
                     variant="rounded"
                     alt="User"
@@ -22,7 +22,7 @@ const MyProfileInfo = ({ onMainPhotoSelected, profileErr, profile, myId, editMod
                         borderColor: 'primary',
                     }} />
             </div>
-            <div className={styles._iconButton}>
+            <div className={styles.iconButton}>
                 {myId &&
                     <IconButton
                         sx={{
@@ -44,7 +44,7 @@ const MyProfileInfo = ({ onMainPhotoSelected, profileErr, profile, myId, editMod
             </div>
         </div>
 
-        <div className={styles._ProfileData}>
+        <div className={styles.ProfileData}>
             {editMode ? <ProfileDataForm /> : <MyProfileData profile={profile} myId={myId} err={profileErr} />}
         </div>
     </div>

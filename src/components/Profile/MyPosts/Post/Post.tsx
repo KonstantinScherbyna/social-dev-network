@@ -4,7 +4,7 @@ import styles from './post.module.css'
 const Post = (props: InewPost) => {
 
   return (
-    <div className={styles._post}>
+    <div className={styles.post}>
       {props.message}
     </div>
   )

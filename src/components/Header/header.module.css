@@ -1,4 +1,4 @@
-._header {
+.page {
     position: fixed;
     width: 100%;
     top: 0;
@@ -6,7 +6,7 @@
     z-index: 50;
 }
 
-._header::before {
+.page::before {
     content: '';
     position: absolute;
     top: 0;
@@ -17,13 +17,13 @@
     z-index: 2;
 }
 
-._container {
+.container {
     max-width: 1180px;
     margin: 0px auto;
     padding: 0px 10px;
 }
 
-._body {
+.body {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -32,7 +32,7 @@
 }
 
 
-._Navbar {
+.Navbar {
     z-index: 3;
     color: #bcaaa4;
     display: flex;
@@ -41,20 +41,20 @@
 }
 
 
-._burger {}
+.burger {}
 
-._loginName {
+.loginName {
     z-index: 3;
     color: #809dfc;
     flex: 0.1 1 auto;
 }
 
-._logout {
+.logout {
     z-index: 3;
     color: #bcaaa4;
 }
 
-._buttonLogout {
+.buttonLogout {
     color: #bcaaa4;
     background-color: inherit;
     font-family: Poppins;
@@ -63,36 +63,36 @@
     cursor: pointer;
 }
 
-._buttonLogout:hover {
+.buttonLogout:hover {
     color: #809dfc;
 }
 
 
-._login {
+.login {
     position: absolute;
     z-index: 3;
     color: #bcaaa4;
     right: 0;
 }
 
-._login:hover {
+.login:hover {
     color: #809dfc;
 }
 
 
 
 @media (max-width:767.98px) {
-    ._Navbar {
+    .Navbar {
         z-index: -1;
     }
 
-    ._body {
+    .body {
         height: 46px;
         justify-content: center;
         column-gap: 16px;
     }
 
-    ._burger {
+    .burger {
         display: block;
         position: absolute;
         right: 20px;
@@ -102,7 +102,7 @@
     }
 
 
-    ._Navbar {
+    .Navbar {
         position: fixed;
         top: 0;
         right: -100%;
@@ -114,14 +114,14 @@
         transition: all 0.3s ease 0s;
     }
 
-    ._Navbar.active {
+    .Navbar.active {
         right: 0;
     }
 
 }
 
 @media (max-width:479.98px) {
-    ._body {
+    .body {
         justify-content: flex-start;
     }
 }

@@ -1,19 +1,19 @@
 
-._item {
+.item {
     display: flex;
     column-gap: 5px;
 }
 
-._itemTitle {
+.itemTitle {
     font-weight: 500;
 }
 
-._itemField {
+.itemField {
     font-weight: 600;
 }
 
 
-._statusBody {
+.statusBody {
     display: flex;
     column-gap: 5px;
 }

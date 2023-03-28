@@ -11,12 +11,12 @@ const Profile = () => {
     let { userId } = useParams()
 
     return (
-        <div className={styles._page}>
-            <div className={styles._container}>
-                <div className={styles._ProfileInfoContainer}>
+        <div className={styles.page}>
+            <div className={styles.container}>
+                <div className={styles.ProfileInfoContainer}>
                     <ProfileInfoContainer />
                 </div>
-                {!userId && <div className={styles._MyPostsContainer}>
+                {!userId && <div className={styles.MyPostsContainer}>
                     <MyPostsContainer />
                 </div>}
             </div>

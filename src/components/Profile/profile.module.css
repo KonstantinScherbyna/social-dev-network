@@ -1,7 +1,7 @@
-._page {
+.page {
 }
 
-._container {
+.container {
     padding: 68px 16px 18px 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -9,7 +9,7 @@
 }
 
 @media (max-width:860.98px) {
-    ._container {
+    .container {
         display: flex;
         flex-direction: column;
     }
@@ -17,7 +17,7 @@
 
 
 @media (max-width:860.98px) {
-    ._container::after {
+    .container::after {
         width: 200%;
         left: 28%;
         height: 74%;
@@ -26,10 +26,10 @@
 }
 
 
-._ProfileInfoContainer {}
+.ProfileInfoContainer {}
 
-._MyProfileInfo {}
+.MyProfileInfo {}
 
-._ProfileInfo {}
+.ProfileInfo {}
 
-._MyPostsContainer {}
+.MyPostsContainer {}

@@ -12,9 +12,9 @@ const MyPosts = ({ onPostChange, onAddPost, sendMessageEvent, newPostText, }: IM
 
 
     const posts = useAppSelector((state) => state.profilePage.posts)
-    
+
     return (<ThemeProvider theme={theme2}>
-        <div className={styles._page}>
+        <div className={styles.page}>
 
             <TextField onKeyDown={sendMessageEvent} color='primary' id="TextField-MyPosts" label="Enter your post" variant="outlined"
                 onChange={onPostChange}
@@ -22,10 +22,10 @@ const MyPosts = ({ onPostChange, onAddPost, sendMessageEvent, newPostText, }: IM
                 sx={{ mt: 2, mr: 1, width: '100%' }}
             />
 
-            <button onClick={onAddPost} className={styles._addPostButton}>Add post</button>
+            <button onClick={onAddPost} className={styles.addPostButton}>Add post</button>
 
         </div>
-        <div className={styles._posts}>
+        <div className={styles.posts}>
             {posts.map(p => <Post key={p.id} message={p.message} id={p.id} />)}
         </div>
     </ThemeProvider>

@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../../hook';
 import { myProfileInfoThunk } from '../../../redux/profile-reducer-slice';
 import styles from './profileDataForm.module.css'
 
-const ProfileDataForm = (props: any) => {
+const ProfileDataForm = () => {
 
     const dispatch = useAppDispatch()
 
@@ -21,7 +21,7 @@ const ProfileDataForm = (props: any) => {
 
     }
 
-    return <div className={styles.__container}>
+    return <div className={styles.container}>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <input type="submit" />

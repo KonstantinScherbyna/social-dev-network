@@ -2,9 +2,9 @@ import styles from "./profileData.module.css"
 
 const Contact = ({ contactTitle, contactValue }: { contactTitle: string, contactValue: string | null }) => {
     
-    return <div className={styles._contactItem}>
-        <div className={styles._itemTitle}>{contactTitle}:</div>
-        <div className={styles._itemField}>{contactValue}</div>
+    return <div className={styles.contactItem}>
+        <div className={styles.itemTitle}>{contactTitle}:</div>
+        <div className={styles.itemField}>{contactValue}</div>
     </div >
 
 }

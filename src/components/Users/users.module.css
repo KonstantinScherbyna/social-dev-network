@@ -1,4 +1,4 @@
-._users {
+.users {
     margin: 68px 12px 24px 12px;
     max-height: 100%;
     max-width: 100%;
@@ -11,20 +11,20 @@
 
 
 
-._UsersSearchFormContainer {
+.UsersSearchFormContainer {
     margin-bottom: 4px;
     display: flex;
     justify-content: center;
 }
 
 
-._Paginator {
+.Paginator {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-._userContainers {
+.userContainers {
     display: grid;
     justify-content: flex-start;
     grid-template-columns: repeat(auto-fill, minmax(180px, 400px));
@@ -33,80 +33,80 @@
     padding-top: 24px;
 }
 
-._UserContainer {}
+.UserContainer {}
 
-._form {
+.form {
     display: flex;
     gap: 12px;
     width: 500px;
 }
 
 
-._page {
+.page {
     display: flex;
     gap: 12px;
 }
 
-._user {
+.user {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-._avatar {}
+.avatar {}
 
-._image {}
+.image {}
 
-._image img {
+.image img {
     max-height: 150px;
     max-width: 150px;
 }
 
 
-._buttons {
+.buttons {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-._buttons button {}
+.buttons button {}
 
-._nameNstatus {
+.nameNstatus {
     width: 100%;
 }
 
-._name {
+.name {
     font-weight: 600;
     text-decoration: underline;
 }
 
-._status {}
+.status {}
 
 
 @media (max-width: 991.98px) {
-    ._users {
+    .users {
         display: flex;
         flex-direction: column;
     }
 
-    ._image img {
+    .image img {
         max-height: 100px;
         max-width: 100px;
     }
 }
 
 @media (max-width: 479.98px) {
-    ._form {
+    .form {
         flex-direction: column;
         padding: 4px 8px;
     }
 
-    ._image img {
+    .image img {
         max-height: 80px;
         max-width: 80px;
     }
 
-    ._buttons button {
+    .buttons button {
         font-size: 0.7125rem;
         line-height: 1;
         letter-spacing: 0;

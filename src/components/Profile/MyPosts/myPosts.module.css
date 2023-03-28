@@ -1,8 +1,8 @@
-._page {
+.page {
     display: flex;
 }
 
-._addPostButton {
+.addPostButton {
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -17,19 +17,19 @@
     min-width: 128px;
 }
 
-._addPostButton:hover {
+.addPostButton:hover {
     background-color: #809dfc;
 }
 
-._posts {}
+.posts {}
 
 
 @media (max-width:479.98px) {
-    ._page {
+    .page {
         flex-direction: column;
     }
 
-    ._addPostButton {
+    .addPostButton {
         width: 100%;
         height: 48px;
     }

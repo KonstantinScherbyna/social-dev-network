@@ -1,4 +1,4 @@
-._items {
+.items {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -7,11 +7,11 @@
     height: 100%
 }
 
-._edit {
+.edit {
     align-self: flex-start;
 }
 
-._editButton {
+.editButton {
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -25,59 +25,59 @@
     transition: background-color 0.3s ease 0s;
 }
 
-._editButton:hover {
+.editButton:hover {
     background-color: #809dfc;
 }
 
 
-._contactsItems {}
+.contactsItems {}
 
-._content {}
+.content {}
 
 
-._item {
+.item {
     display: flex;
     gap: 5px;
     padding-bottom: 8px;
 }
 
 
-._contactItem {
+.contactItem {
     display: flex;
     gap: 4px;
 }
 
-._itemTitle {
+.itemTitle {
     font-weight: 500;
 }
 
-._itemField {
+.itemField {
     font-weight: 600;
     flex: 1 1 auto;
 }
 
 @media (max-width:860.98px) {
-    ._itemTitle {
+    .itemTitle {
         font-weight: 400;
         font-size: 14px;
     }
 
-    ._itemField {
+    .itemField {
         font-size: 14px;
     }
 
 }
 
 @media (max-width:600.98px) {
-    ._contactItem:not(:last-child) {
+    .contactItem:not(:last-child) {
         margin-bottom: 8px;
     }
 }
 
 @media (max-width:479.98px) {
-    ._contactItem {
+    .contactItem {
         flex-direction: column;
     }
 }
 
-._ProfileStatusContainer {}
+.ProfileStatusContainer {}

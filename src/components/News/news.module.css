@@ -1,8 +1,8 @@
-._page {
+.page {
     overflow: auto;
 }
 
-._page_container {
+.container {
     font-size: medium;
     position: relative;
     padding: 60px 10px 50px 10px;
@@ -10,11 +10,11 @@
 
 
 
-._body {
+.body {
     transition: all 0.3s ease 0s;
 }
 
-._body:hover {
+.body:hover {
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
         0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
         0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
@@ -26,7 +26,7 @@
 
 
 
-._body img {
+.body img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +37,7 @@
 }
 
 
-._title {
+.title {
     display: block;
     text-align: center;
     font-size: large;
@@ -47,7 +47,7 @@
 
 
 
-._description {
+.description {
     font-size: 700;
     padding: 30px 50px;
     line-height: 1.5;
@@ -56,40 +56,40 @@
 
 
 @media (max-width: 991.98px) {
-    ._description {
+    .description {
         font-size: 500;
         padding: 15px 10px;
     }
 }
 
 
-._resource {
+.resource {
     text-align: left;
     padding: 25px 20px 6px 20px;
     font-size: large;
 }
 
 @media (max-width: 991.98px) {
-    ._resource {
+    .resource {
         text-align: left;
         padding: 25px 10px 6px 10px;
         font-size: medium;
     }
 }
 
-._author {
+.author {
     text-align: left;
 
 }
 
-._resourceRef {
+.resourceRef {
 
     align-items: center;
     text-align: center;
 
 }
 
-._resourceRef a {
+.resourceRef a {
     align-items: center;
     text-align: center;
     width: 100px;
@@ -103,7 +103,7 @@
 
 }
 
-._resourceRef a:hover {
+.resourceRef a:hover {
     background-color: #5d4037;
 }
 

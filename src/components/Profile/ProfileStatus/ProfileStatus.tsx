@@ -4,10 +4,10 @@ import styles from './profileStatus.module.css'
 const ProfileStatus = (props: any) => {
 
 
-    return <div className={styles._statusBody}>
-        {!props.editMode && <div className={styles._item}>
-            <div className={styles._itemTitle}>Status :</div>
-            <div className={styles._itemField}
+    return <div className={styles.statusBody}>
+        {!props.editMode && <div className={styles.item}>
+            <div className={styles.itemTitle}>Status :</div>
+            <div className={styles.itemField}
                 onDoubleClick={props.activateEditMode}>{props.userStatus || "Hey! I'm your staus"}</div>
         </div>
         }

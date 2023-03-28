@@ -1,32 +1,32 @@
-._body {
+.body {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 @media (max-width:860.98px) {
-    ._body {
+    .body {
         gap: 0px;
         flex-direction: row;
     }
 }
 
 @media (max-width:767.98px) {
-    ._body {
+    .body {
         flex-direction: column;
     }
 }
 
-._mediaData {
+.mediaData {
     flex: 0 1 252px;
 }
 
-._avatar {}
+.avatar {}
 
-._iconButton {
+.iconButton {
     padding-left: 220px;
 }
 
-._ProfileData {
+.ProfileData {
     flex: 1 1 100%;
 }

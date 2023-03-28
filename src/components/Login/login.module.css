@@ -1,4 +1,4 @@
-._loginForm {
+.loginForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     padding-top: 8px;
 }
 
-._loginFormBody {
+.loginFormBody {
     position: relative;
     width: 450px;
     height: 550px;
@@ -23,7 +23,7 @@
 }
 
 
-._register {
+.register {
     display: flex;
     color: #fff;
     padding: 16px 2px 24px 2px;
@@ -31,19 +31,19 @@
 }
 
 
-._register a {
+.register a {
     text-decoration: underline;
     padding-left: 6px;
     color: #d5bdff;
 }
 
-._register a:hover {
+.register a:hover {
     color: #33eaff;
 }
 
 
 @media (max-width:479.98px) {
-    ._loginFormBody {
+    .loginFormBody {
         width: 300px;
     }
 }

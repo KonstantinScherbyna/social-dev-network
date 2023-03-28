@@ -8,20 +8,20 @@ const Navbar = () => {
     let myPhoto = useAppSelector(store => store.profilePage.myProfile.photos)
     const loginName = useAppSelector((store) => store.auth.login)
 
-    return <nav className={styles._navbar}>
-        <NavLink to="/news" className={styles._news}>
+    return <nav className={styles.page}>
+        <NavLink to="/news" className={styles.news}>
             News
         </NavLink>
-        <div className={styles._avatart}>
+        <div className={styles.avatart}>
             {myPhoto.small && <Avatar alt="KostyaSh" src={myPhoto.small as string} sx={{ width: 24, height: 24 }} />}
         </div>
-        <NavLink to="/profile" className={styles._profile}>
+        <NavLink to="/profile" className={styles.profile}>
             {loginName}
         </NavLink>
-        <NavLink to="/chat" className={styles._chat}>
+        <NavLink to="/chat" className={styles.chat}>
             Chat
         </NavLink>
-        <NavLink to="/users" className={styles._users} >
+        <NavLink to="/users" className={styles.users} >
             Users
         </NavLink>
     </nav >

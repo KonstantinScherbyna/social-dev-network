@@ -61,9 +61,9 @@ const LoginForm = (props: any) => {
     };
 
 
-    return (<div className={styles._loginForm}>
+    return (<div className={styles.loginForm}>
 
-        <div className={styles._loginFormBody}>
+        <div className={styles.loginFormBody}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <Box sx={{ fontSize: 'h5.fontSize', color: "white", textAlign: 'center', pb: 16, pt: 2 }}>
@@ -117,7 +117,7 @@ const LoginForm = (props: any) => {
                     </Box >
                 </div>
 
-                <div className={styles._register}>
+                <div className={styles.register}>
                     Don't have an acount
                     <a href="https://social-network.samuraijs.com/" target="blank">
                         Register

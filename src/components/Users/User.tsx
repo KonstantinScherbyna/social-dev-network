@@ -10,17 +10,17 @@ import styles from './users.module.css'
 let User = ({ user, followingInProgress, follow, unfollow }: { user: Iusers, followingInProgress: number[], follow: (uid: number) => void, unfollow: (uid: number) => void }) => {
 
     return <ThemeProvider theme={theme2}>
-        <div className={styles._page}>
-            <div className={styles._user}>
-                <div className={styles._avatar}>
-                    <NavLink to={`/profile/${user.id}`} className={styles._image}>
+        <div className={styles.page}>
+            <div className={styles.user}>
+                <div className={styles.avatar}>
+                    <NavLink to={`/profile/${user.id}`} className={styles.image}>
                         <img
                             alt={user.name as string}
                             src={user.photos.small ? user.photos.small : userPhoto}
                         />
                     </NavLink>
                 </div>
-                <div className={styles._buttons}>
+                <div className={styles.buttons}>
                     {user.followed
                         ? <Button
                             sx={{
@@ -51,14 +51,12 @@ let User = ({ user, followingInProgress, follow, unfollow }: { user: Iusers, fol
                         </Button>}
                 </div>
             </div>
-            <div className={styles._nameNstatus}>
-
-                <div className={styles._name}>
+            <div className={styles.nameNstatus}>
+                <div className={styles.name}>
                     {user.name}
                 </div>
-                <div className={styles._status}>
+                <div className={styles.status}>
                     {user.status}
-
                 </div>
             </div>
         </div >

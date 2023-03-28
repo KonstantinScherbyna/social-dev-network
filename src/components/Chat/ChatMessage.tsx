@@ -12,13 +12,13 @@ const ChatMessage: React.FC<{ message: IChatMessageAPI }> = (({ message }) => {
         display: 'flex',
     }}
     >
-        <div className={styles._body}>
+        <div className={styles.body}>
             <NavLink to={`/profile/${message.userId}`}>
                 <img alt={message.userName as string}
                     src={message.photo || userPhoto}
                 />
             </NavLink>
-            <div className={styles._userName}>
+            <div className={styles.userName}>
                 {message.userName}
             </div>
         </div>

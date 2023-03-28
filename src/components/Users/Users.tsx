@@ -10,11 +10,11 @@ import styles from './users.module.css'
 let Users = (props: IusersProps) => {
 
     return (<ThemeProvider theme={theme2}>
-        <div className={styles._users}>
-            <div className={styles._UsersSearchFormContainer}>
+        <div className={styles.users}>
+            <div className={styles.UsersSearchFormContainer}>
                 <UsersSearchFormContainer />
             </div>
-            <div className={styles._Paginator}>
+            <div className={styles.Paginator}>
                 <Paginator
                     currentPage={props.pageNumber}
                     totalItemsCount={props.totalItemsCount}
@@ -22,9 +22,9 @@ let Users = (props: IusersProps) => {
                     filter={props.filter}
                 />
             </div>
-            <div className={styles._userContainers}>
+            <div className={styles.userContainers}>
                 {props.users.map(u =>
-                    <div className={styles._UserContainer} key={u.id}>
+                    <div className={styles.UserContainer} key={u.id}>
                         <UserContainer user={u} followingInProgress={props.followingInProgress} />
                     </div>)
                 }
