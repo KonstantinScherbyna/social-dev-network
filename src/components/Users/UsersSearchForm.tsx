@@ -20,7 +20,7 @@ const UsersSearchForm = (props: IPropsUsersSearchForm) => {
 
     return (<ThemeProvider theme={theme2}>
 
-        <form className={styles._form}>
+        <form className={styles.form}>
             <TextField sx={{ width: '100%' }} 
             defaultValue={props.filter.term} 
             variant="filled" 
