@@ -6,10 +6,9 @@ import { getMyProfile } from "./profile-reducer-slice";
 
 //TODO fix dublicats
 
-// Fetch to API for take authentification data, 
-// if resultCode = 0 all works as planed
+// fetching authentication data from API, if resultCode = 0 all works as planed
 // dispatch {id, login, email} to a reducer 
-// dispatch 'getMyProfile' for fetch MyProfile from API
+// fetching MyProfile from API
 
 export const getAuthUserData = createAsyncThunk<number, void>(
     'authReducerSlice/getAuthUserData', async (_, { dispatch }) => {
@@ -29,10 +28,10 @@ export const getAuthUserData = createAsyncThunk<number, void>(
 )
 
 
-// Send to API authentification datas. 
-// If response resultcode = 0, fetching authentification data from API
-// If response resultcode = 10 create 'get' request to API for captcha
-// If response resultcode another it means error and we clearup authentification data in state
+// dispatch authentication data to API. 
+// if response resultcode = 0, fetching authentification data from API
+// if response resultcode = 10 create 'get' request to API for captcha
+// if the response code is different, we clear the authentification data in state
 export const login = createAsyncThunk<void, ImyAuthData>(
     'authReducerSlice/login', async (data, { dispatch }) => {
 
@@ -64,7 +63,7 @@ export const logout = createAsyncThunk<void, void>(
     }
 )
 
-// fetch Captch for login
+// fetching Captcha from API
 export const getCaptchaUrlThunk = createAsyncThunk<void, void>(
     'authReducerSlice/getCaptchaUrlThunk', async (_, { dispatch }) => {
 
