@@ -3,7 +3,7 @@
   "name": "social-dev-network",
   "builds": [
     {
-      "src": "src/index.ts",
+      "src": "src/index.tsx",
       "use": "@vercel/create-react-app"
     }
   ],
